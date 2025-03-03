@@ -11,48 +11,65 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <section>
-        <div class="navbar bg-base-100 shadow-sm">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+    <header class="container mx-auto">
+        <!-- Navbar -->
+        <section>
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 3</a></li>
+                    <a class="btn btn-ghost text-xl">JR Travels</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">JR Travels</a>
+                <div class="navbar-end">
+                    <a class="btn">Train</a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="btn">Train</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Banner --> 
-     <section>
-        <div>
-            <h1>End-to-End Travel with <br> JR-Travels</h1>
-            <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
-            <button>Buy Tickets</button>
-        </div>
-     </section>
+        <!-- Banner -->
+        <section class="mt-8">
+            <div class="banner lg: h-[550px] rounded" style="background-image: url(./images/Bd\ Train.jpg); background-repeat: no-repeat; background-size: cover;">
+               <div class="text-center">
+                <h1 class="font-extrabold text-6xl pt-20 text-[#1DD100]">End-to-End Travel with <br> <span class="text-red-600">JR-Travels</span></h1>
+                <p class="text-xl font-normal mt-4 text-white">Yes, you can run unit tests and view the results directly within the app.
+                    <br> The integrated testing features allow for a streamlined.</p>
+                <button class="btn bg-[#1DD100] py-5 px-8 text-xl font-bold mt-8">Buy Tickets</button>
+               </div>
+            </div>
+        </section> 
+        <!-- Card --> 
+         <section>
+            <div class="card card-border bg-base-100 w-96">
+                <div class="card-body">
+                  <h2 class="card-title">Card Title</h2>
+                  <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+         </section>
+    </header>
 </body>
 
 </html>
