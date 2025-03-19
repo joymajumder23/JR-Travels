@@ -281,7 +281,7 @@
 
                 <!-- Table -->
                 <div class="w-full">
-                  <div class="overflow-x-auto bg-base-300 rounded-3xl">
+                  <div class="overflow-x-auto bg-base-300 rounded-3xl p-9">
                     <table class="table">
                       <!-- head -->
                       <thead>
@@ -300,18 +300,37 @@
                       </tbody>
                     </table>
 
+                    <hr>
+
                     <!-- Form input -->
                     <fieldset class="fieldset">
-                      <div class="flex justify-between items-center">
+                      <div class="flex justify-between items-center font-bold">
                         <h1 class="">Total Price</h1>
                         <h1 class="">BDT</h1>
                       </div>
-                      <input type="text" class="input" placeholder="My awesome page" />
-                      <div class="flex justify-between items-center">
+                      <div class="flex gap-3 relative">
+                        <input type="text" class="input" placeholder="Coupon" />
+                        <button class="btn absolute ml-40 bg-green-600 text-white">Apply</button>
+                      </div>
+                      <div class="flex justify-between items-center font-bold">
                         <h1 class="">Grand Total</h1>
                         <h1 class="">BDT</h1>
                       </div>
                     </fieldset>
+
+                    <fieldset class="fieldset w-xs bg-base-200 border border-base-300 p-4 rounded-box">
+                      <label class="fieldset-label font-bold">Passenger Name</label>
+                      <input type="text" class="input" placeholder="Enter your name" />
+
+                      <label class="fieldset-label font-bold">Phone Number</label>
+                      <input type="text" class="input" placeholder="Enter your phone number" />
+
+                      <label class="fieldset-label font-bold">Email ID</label>
+                      <input type="text" class="input" placeholder="Enter your email id" />
+                    </fieldset>
+                    <div class="mt-6">
+                      <button class="btn bg-green-600 text-white w-full">Next</button>
+                    </div>
                   </div>
                 </div>
               </div>
